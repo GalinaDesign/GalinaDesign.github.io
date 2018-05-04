@@ -1,0 +1,44 @@
+
+*{ margin: 0; box-sizing: border-box; } 
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: Calibri, sans-serif;
+    color: #000000;
+}
+
+h1 {
+    font-size: 1.6rem;
+    color: /#0000ff/;
+}
+
+h2 {
+    font-size: .9rem;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 100%;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: #7d26cd;
+    color: whitesmoke;
+}
+
+header img {
+    width: 184;
+    height: auto;
+    float: right;
+    
+}
+
+footer {
+    clear:both;
+    font-size: .85rem;
+}
