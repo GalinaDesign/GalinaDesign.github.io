@@ -1,0 +1,102 @@
+
+* { box-sizing: border-box;} 
+
+body {
+  font-size: 16px;
+  font-family: Verdana, sans-serif; 
+}
+
+header, nav, main, footer { 
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header, main, footer {
+    text-align: left;
+}
+
+header {    
+   background-color: #46a8c8;     
+}
+
+header h1 {
+    color: #ff8300;
+    text-align: center; 
+}
+
+.subheading {
+    color: #ffffff;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: Palatino Linotype;
+    color: #1e0d98;
+}
+
+
+header img {
+    width: 85px;
+    float: left;
+    border: 3px solid orange;
+}
+
+
+nav {}
+
+nav button {}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffda53; 
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;   
+    text-align: center;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+li a:active {background-color: #6657d2;}
+li a:hover {background-color: #ff8300;}
+
+main {}
+main h2 {}
+main figure { margin: 0 0; width:100%; }
+
+main figure img { 
+  width: 100%; 
+}
+
+.forecast { display:none;       
+}
+
+.town-article {
+    width: 100%; 
+}
+
+#sun {
+    width: 50%;
+}
+
+#cowboy {
+    width: 100%;
+}
+
+footer {
+    font-size: .85rem;
+    background-color: #ffda53;
+}
+
+.footer-bar {
+    text-align: center;
+}
