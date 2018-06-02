@@ -1,0 +1,31 @@
+@media only screen and (min-width: 37.5em) {
+        
+    .weather-summary {display: flex;}
+    .highlow, .conditions {float: left; width: 30%;}
+    .current {margin-left: 2%;}
+    
+    .forecast { display: table; } 
+    
+    table { width: 100%; 
+            border: 1px solid gray;
+    }
+    
+    td { background:  #dedcef;
+         padding: 10px; }
+    
+    th { background: #ada6d8;
+        padding: 10px; }
+   
+    #sun { width: 30%; }
+    
+    #cowboy {
+        float: right;
+        margin: 0 0 1em 1em;
+        width: 40%; }
+    
+    #contact {display: flex;}
+    #address {float: left; width: 50%;}
+    #phone {margin-left: 50%;}
+    #email {margin-left: 50%;} 
+
+  }

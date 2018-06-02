@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head> 
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width" initial-scale=1>
+        <meta name="viewport" content="width=device-width", initial-scale=1>
         <meta name="description" content="Franklin city weather page of Bright Weather Site as assignment in CIT 230 at BYU-Idaho">
         
         <title>Franklin city weather page | Bright Weather Site
@@ -24,10 +24,11 @@
             <div class="subheading"><h2>Timely forecast and fresh news always!</h2></div>
         </header>
 
-            <nav>
-                    <ul>
+            <nav class="clearfix">
+                    <button onclick="toggleMenu()">&#9776;</button>
+                    <ul id="primaryNav" class="hide">
     	               <li><a href="#">Home</a></li>
-    	               <li><a href="#">Franklin</a></li>
+    	               <li class="active"><a href="#">Franklin</a></li>
     	               <li><a href="#">Greenville</a></li>
     	               <li><a href="#">Springfield</a></li>
     	               <li><a href="#">Storm Center</a></li>
@@ -37,8 +38,8 @@
     
         <main>
                 
-                    <figure>
-                        <img src="images/blue-sky.jpg" alt="blue sky with clouds">
+                    <figure class="hero">
+                        <img src="images/franklin-ps12.jpg" alt="blue sky with clouds" sizes="100vw" srcset="images/franklin-400.jpg 400w, images/franklin-800.jpg 800w, images/franklin-1028.jpg 1028w">
                     </figure>
                     <h1>Franklin</h1>
             
@@ -104,9 +105,9 @@
       
             <article>
                 <h2>Franklin Breaks Record</h2>	
-                    <img id="cowboy" src="images/cowboy.jpg" alt="cowboy riding horse">
+                    <img id="cowboy" src="images/cowboy.jpg" alt="cowboy riding horse" sizes="50vw" srcset="images/cowboy200.jpg 200w, images/cowboy500.jpg 500w, images/cowboy800.jpg 800w">
                     
-                    <p class="town-article">On this day in history in 1984 the release of "Indiana Jones and the Temple of Doom", 2nd in the film series, directed by Stephen Spielberg, produced by George Lucas and starring Harrison Ford, opens in the US. And again I repeat all said above to make more space for article: On this day in history in 1984 the release of "Indiana Jones and the Temple of Doom", 2nd in the film series, directed by Stephen Spielberg, produced by George Lucas and starring Harrison Ford, opens in the US. On this day in history in 1984 the release of "Indiana Jones and the Temple of Doom", 2nd in the film series, directed by Stephen Spielberg, produced by George Lucas and starring Harrison Ford, opens in the US.
+                    <p class="town-article">On this day in history in 1984 the release of "Indiana Jones and the Temple of Doom", 2nd in the film series, directed by Stephen Spielberg, produced by George Lucas and starring Harrison Ford, opens in the US. And again I repeat all said above to make more space for article: On this day in history in 1984 the release of "Indiana Jones and the Temple of Doom", 2nd in the film series, directed by Stephen Spielberg, produced by George Lucas and starring Harrison Ford, opens in the US. On this day in history in 1984 the release of "Indiana Jones and the Temple of Doom", 2nd in the film series, directed by Stephen Spielberg, produced by George Lucas and starring Harrison Ford, opens in the US. On this day in history in 1984 the release of "Indiana Jones and the Temple of Doom", 2nd in the film series, directed by Stephen Spielberg, produced by George Lucas and starring Harrison Ford, opens in the US.
                     </p>
             </article>		  
   
@@ -136,28 +137,7 @@
              </section>
              
         </footer>
-                
+            <script src="js/currentdate.js"></script>
+            <script src="js/hamburger.js"></script>
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
