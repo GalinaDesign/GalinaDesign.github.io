@@ -1,0 +1,51 @@
+@media only screen and (min-width: 64em ) {
+
+      nav {
+background: #ffda53; 
+background: -moz-linear-gradient(top, #ffda53 0%, #f78d2a 100%); 
+background: -webkit-linear-gradient(top, #ffda53 0%,#f78d2a 100%); 
+background: linear-gradient(to bottom, #ffda53 0%,#f78d2a 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffda53', endColorstr='#f78d2a',GradientType=0 ); 
+    }
+
+    nav button { display: none; }
+    
+    nav ul.hide { display: flex; }
+    
+    nav ul { margin-left: 2%; } 
+    
+   /* nav ul li {
+        float: left;} */
+    
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: 0.6rem 1rem;
+    }
+    
+  header, nav, main, footer {
+      max-width: 64rem;
+      margin: auto; 
+    }    
+    
+    main {
+        
+    }
+    
+  #cowboy {
+       /* float: right; */
+        
+        margin: 1em;
+        width: 30%; }
+    
+    .gallery figure {
+        box-shadow: 15px 15px 15px grey;
+    }  
+    
+    .gallery {
+        width: 960px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+  }
