@@ -1,0 +1,60 @@
+@media only screen and (min-width: 37.5em) {
+        
+    .weather-summary {display: flex;
+    justify-content: space-around;}
+   /* .highlow, .conditions {float: left; width: 30%;}
+    .current {margin-left: 2%;} */
+    
+    .forecast { display: table; } 
+    
+    table { width: 100%; 
+            border: 1px solid gray;
+    }
+    
+    td { background:  #dedcef;
+         border: 1px solid gray;
+         padding: 10px; }
+    
+    th { background: #ada6d8;
+        border: 1px solid gray;
+        padding: 10px; }
+   
+    #sun { width: 30%; }
+    
+    article {
+        display: flex;
+        justify-content: space-around;
+    }
+   
+    article h2 {
+    }
+    
+   article p {
+    }
+    
+    #cowboy {
+        align-self: flex-start;
+        order: 1; 
+        margin: 1em;
+        width: 40%;
+    }
+    
+    .contact {display: flex;
+    justify-content: space-between;}
+    
+  /* #address {float: left; width: 50%;}
+    #phone {margin-left: 50%;}
+    #email {margin-left: 50%;}*/
+    #address, #phone, #email {margin: 1em;}
+    
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .gallery img {
+        width: 95%;
+    }
+    
+    .gallery img:hover {box-shadow: 10px 10px 15px orange;}
+  }

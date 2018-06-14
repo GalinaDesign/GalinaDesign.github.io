@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Franklin city weather page of Bright Weather Site as assignment in CIT 230 at BYU-Idaho">
+        
+        <title>Franklin city weather page | Bright Weather Site
+        </title>
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Mitr" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+
+        <header>
+             <img id="logo" src="images/logo.jpg" alt="Logo of Bright Weather Site">
+            <h1>Bright Weather Site</h1>
+            <div class="subheading"><h2>Timely forecast and fresh news always!</h2></div>
+        </header>
+
+            <nav class="clearfix">
+                    <button onclick="toggleMenu()">&#9776;</button>
+                    <ul id="primaryNav" class="hide">
+    	               <li><a href="#">Home</a></li>
+    	               <li class="active"><a href="index.html">Franklin</a></li>
+    	               <li><a href="#">Greenville</a></li>
+    	               <li><a href="#">Springfield</a></li>
+    	               <li><a href="stormcenter.html">Storm Center</a></li>
+    	               <li><a href="gallery.html">Gallery</a></li>
+                    </ul>		
+            </nav>
+    
+        <main>
+                
+                    <figure class="hero">
+                        <img src="images/franklin-ps12.jpg" alt="blue sky with clouds" sizes="100vw" srcset="images/franklin-400.jpg 400w, images/franklin-800.jpg 800w, images/franklin-1028.jpg 1028w">
+                    </figure>
+                    <h1>Franklin</h1>
+            
+            <section class="weather-summary">
+                    <h2>Weather Summary</h2>    
+            
+                <div class="highlow">
+                    <ul>
+                        <li>High: 90&deg;F</li>
+                        <li>Low: 66&deg;F</li> 
+                    </ul>
+                </div>
+                
+                <div class="conditions">
+                    <ul>
+                        <li>Precipitation: 0%</li>
+                        <li>Wind Speed: 5 mph SW</li>
+                    </ul> 
+                </div> 
+                
+                <div class="current">
+                    <h2>Sunny</h2>
+                    <picture>
+                        <img id="sun" src="images/sunny.jpg" alt="smiling sun">
+                    </picture>
+                </div> 
+                
+                <div class="windchill">
+                    <h2>Wind Chill</h2>
+                    Temperature High: <input type="text" id="high" maxlength="4" size="1"><br>
+                    
+                    Temperature Low: <input type="text" id="low" maxlength="4" size="1"><br>
+                    
+                    Wind Speed: <input type="text" id="wind" maxlength="4" size="1"><br>
+                    
+                    The wind chill is:
+                    <button type="button" onclick="windChill ()">Calculate</button><br>
+                    <div id="output"></div>
+                    
+                </div>    
+            </section>
+                
+            <section class="forecast">
+                
+            <h2>Ten Day Forecast</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+	               </thead>
+                    <tbody>  
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+	               </tbody>
+                </table>
+            </section>
+                                     
+            <article>
+                <h2>Franklin Breaks Record</h2>	
+                    <img id="cowboy" src="images/cowboy.jpg" alt="cowboy riding horse" sizes="50vw" srcset="images/cowboy200.jpg 200w, images/cowboy500.jpg 500w, images/cowboy800.jpg 800w">
+                    
+                    <p class="town-article">On this day in history in 1984 the release of "Indiana Jones and the Temple of Doom", 2nd in the film series, directed by Stephen Spielberg, produced by George Lucas and starring Harrison Ford, opens in the US. And again I repeat all said above to make more space for article: On this day in history in 1984 the release of "Indiana Jones and the Temple of Doom", 2nd in the film series, directed by Stephen Spielberg, produced by George Lucas and starring Harrison Ford, opens in the US. On this day in history in 1984 the release of "Indiana Jones and the Temple of Doom", 2nd in the film series, directed by Stephen Spielberg, produced by George Lucas and starring Harrison Ford, opens in the US. On this day in history in 1984 the release of "Indiana Jones and the Temple of Doom", 2nd in the film series, directed by Stephen Spielberg, produced by George Lucas and starring Harrison Ford, opens in the US.
+                    </p>
+            </article>		  
+  
+         </main>
+    
+         <footer>
+            
+             <section class="contact">
+                 
+                <div id="address">
+                <strong>Address:</strong><br>    
+                Bright Weather Center<br>
+                123 Main St.<br> 
+                Franklin, MI 87654</div><br>
+                
+                <div id="phone">    
+                <strong>Phone:</strong><br>
+                (801)555-1234</div><br>
+                    
+                <div id="email">
+                <strong>Email:</strong><br>
+                contact@weather.com</div><br>
+                 
+             </section><br>
+                
+             <section class="footer-bar">&copy;2018 | Galina T. | Bright Weather Site | <span id="currentdate">Current Date Placeholder</span>
+             </section>
+             
+        </footer>
+            <script src="js/currentdate.js"></script>
+            <script src="js/hamburger.js"></script>
+            <script src="js/windchill.js"></script>
+    </body>
+</html>

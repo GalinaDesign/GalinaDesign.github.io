@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Franklin city weather page of Bright Weather Site as assignment in CIT 230 at BYU-Idaho">
+        
+        <title>Franklin city weather page | Bright Weather Site
+        </title>
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Mitr" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+
+        <header>
+             <img id="logo" src="images/logo.jpg" alt="Logo of Bright Weather Site">
+            <h1>Bright Weather Site</h1>
+            <div class="subheading"><h2>Timely forecast and fresh news always!</h2></div>
+        </header>
+
+            <nav class="clearfix">
+                    <button onclick="toggleMenu()">&#9776;</button>
+                    <ul id="primaryNav" class="hide">
+    	               <li><a href="#">Home</a></li>
+    	               <li><a href="index.html">Franklin</a></li>
+    	               <li><a href="#">Greenville</a></li>
+    	               <li><a href="#">Springfield</a></li>
+    	               <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+    	               <li><a href="gallery.html">Gallery</a></li>
+                    </ul>		
+            </nav>
+    
+        <main>
+            <figure class="storm">
+                <img src="images/thunderstorm.jpg" alt="stormy sky" sizes="100vw" srcset="images/thunderstorm-400.jpg 400w, images/thunderstorm-800.jpg 800w, images/thunderstorm-1028.jpg 1028w">
+            </figure>
+            
+            <h1>Storm Center</h1>
+            
+            <h2>Report here a storm or unusual weather event in your travel area!</h2>
+            
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Personal information</legend>
+                    First Name*:<input type="text" name="fname" value="" required autofocus pattern="[A-Za-z]{5}"><br>
+                    Last Name*:<input type="text" name="lname" required>
+                    
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label>
+                    Email:<input type="email" name="email" placeholder="username@gmail.com"><br></label>
+                    Phone*:<input type="tel" name="tel" required><br>
+                    Zip Code*:<input type="number" name="zip" required>
+                
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    Storm Date:<input type="date" name="date"><br>
+                    
+                    Storm Type:<input list="storms" name="storm-type"><br>
+                        <datalist id="storms">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+                    
+                    Storm Severity:<label for="rating"> Rating (1 to 10)</label>
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span><br><br>
+                    
+                    Storm Region: <select name="region">
+                        <option value="" disabled>Select Region</option>
+                        <option value="franklin">Franklin</option>
+                        <option value="greenville">Greenville</option>
+                        <option value="springfield">Springfield</option>
+                    </select><br>
+                    
+                    Your in-danger level:<br>
+                        <input type="radio" name="danger" value="yes">Yes<br>
+                        <input type="radio" name="danger" value="maybe">Maybe<br>
+                        <input type="radio" name="danger" value="no">No<br>                
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Comments</legend>
+                <textarea name="message" rows="10" cols="30"></textarea>
+                </fieldset><br>
+                <input class="sub-button" type="submit" value="Report Storm Condition">
+            </form><br>
+            
+         </main>
+    
+         <footer>
+            
+             <section class="contact">
+                 
+                <div id="address">
+                <strong>Address:</strong><br>    
+                Bright Weather Center<br>
+                123 Main St.<br> 
+                Franklin, MI 87654</div><br>
+                
+                <div id="phone">    
+                <strong>Phone:</strong><br>
+                (801)555-1234</div><br>
+                    
+                <div id="email">
+                <strong>Email:</strong><br>
+                contact@weather.com</div><br>
+                 
+             </section><br>
+                
+             <section class="footer-bar">&copy;2018 | Galina T. | Bright Weather Site | <span id="currentdate">Current Date Placeholder</span>
+             </section>
+             
+        </footer>
+            <script src="js/currentdate.js"></script>
+            <script src="js/hamburger.js"></script>
+            <script src="js/rating.js"></script>
+    </body>
+</html>

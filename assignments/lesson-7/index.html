@@ -43,87 +43,49 @@
                     </figure>
                     <h1>Franklin</h1>
             
-            <section class="weather-summary">
-                    <h2>Weather Summary</h2>    
-            
-                <div class="highlow">
-                    <ul>
-                        <li>High: 90&deg;F</li>
-                        <li>Low: 66&deg;F</li> 
-                    </ul>
-                </div>
-                
-                <div class="conditions">
-                    <ul>
-                        <li>Precipitation: 0%</li>
-                        <li>Wind Speed: 5 mph SW</li>
-                    </ul> 
-                </div> 
-                
-                <div class="current">
-                    <h2>Sunny</h2>
-                    <picture>
-                        <img id="sun" src="images/sunny.jpg" alt="smiling sun">
-                    </picture>
-                </div> 
-                
-                <div class="windchill">
-                    <h2>Wind Chill</h2>
-                    Temperature High: <input type="text" id="high" maxlength="4" size="1"><br>
-                    
-                    Temperature Low: <input type="text" id="low" maxlength="4" size="1"><br>
-                    
-                    Wind Speed: <input type="text" id="wind" maxlength="4" size="1"><br>
-                    
-                    The wind chill is:
-                    <button type="button" onclick="windChill ()">Calculate</button><br>
-                    <div id="output"></div>
-                    
-                </div>    
-            </section>
-                
-            <section class="forecast">
-                
-            <h2>Ten Day Forecast</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Day 1</th>
-                            <th>Day 2</th>
-                            <th>Day 3</th>
-                            <th>Day 4</th>
-                            <th>Day 5</th>
-                            <th>Day 6</th>
-                            <th>Day 7</th>
-                            <th>Day 8</th>
-                            <th>Day 9</th>
-                            <th>Day 10</th>
-                        </tr>
-	               </thead>
-                    <tbody>  
-                        <tr>
-                            <td>89&deg;F</td>
-                            <td>87&deg;F</td>
-                            <td>78&deg;F</td>
-                            <td>75&deg;F</td>
-                            <td>72&deg;F</td>
-                            <td>72&deg;F</td>
-                            <td>79&deg;F</td>
-                            <td>83&deg;F</td>
-                            <td>85&deg;F</td>
-                            <td>89&deg;F</td>
-                        </tr>
-	               </tbody>
-                </table>
-            </section>
-                                     
-            <article>
-                <h2>Franklin Breaks Record</h2>	
-                    <img id="cowboy" src="images/cowboy.jpg" alt="cowboy riding horse" sizes="50vw" srcset="images/cowboy200.jpg 200w, images/cowboy500.jpg 500w, images/cowboy800.jpg 800w">
-                    
-                    <p class="town-article">On this day in history in 1984 the release of "Indiana Jones and the Temple of Doom", 2nd in the film series, directed by Stephen Spielberg, produced by George Lucas and starring Harrison Ford, opens in the US. And again I repeat all said above to make more space for article: On this day in history in 1984 the release of "Indiana Jones and the Temple of Doom", 2nd in the film series, directed by Stephen Spielberg, produced by George Lucas and starring Harrison Ford, opens in the US. On this day in history in 1984 the release of "Indiana Jones and the Temple of Doom", 2nd in the film series, directed by Stephen Spielberg, produced by George Lucas and starring Harrison Ford, opens in the US. On this day in history in 1984 the release of "Indiana Jones and the Temple of Doom", 2nd in the film series, directed by Stephen Spielberg, produced by George Lucas and starring Harrison Ford, opens in the US.
-                    </p>
-            </article>		  
+       <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Website <input type="url" name="url" placeholder="http://" required></label>
+            </fieldset>
+           
+           <fieldset>
+                <legend>Course Information</legend>
+               <div>Audience</div>
+               <label class="sbs"><input type="radio" name="audience" value="beginner"> Beginner</label>
+               <label class="sbs"><input type="radio" name="audience" value="intermediate"> Intermediate</label>
+               <label class="sbs"><input type="radio" name="audience" value="advanced"> Advanced</label>
+               
+               <div>Software Needed</div>
+               <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
+               <label class="sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
+               <label class="sbs"><input type="checkbox" name="process" value="yes"> Preprocessor</label>
+               <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP Client</label>
+           </fieldset>
+           
+           <fieldset>
+           <legend>Funding</legend>
+               <label class="top">Anticipated Completion Date <input type="date" name="completedDate"></label>
+               <label class="top">Course Subject
+                   <select name="subject">
+                       <option value="">Please Select</option>
+                   <option value="software">Software Development</option>
+                   <option value="info">Information Technology</option>
+                   <option value="business">Business</option>
+                   <option value="security">Cyber Security</option>
+                    </select>
+               </label>
+                   
+                <label class="top">How many Authors <input type="number" name="authors"></label> 
+                   
+           </fieldset>
+            <input type="submit" value="Propose My Course" class="submitBtn">
+           
+       </form> 	  
   
          </main>
     
