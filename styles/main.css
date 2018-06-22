@@ -6,6 +6,7 @@ body {
     line-height: 32px;
     font-family: Calibri, sans-serif;
     color: #000000;
+    
 }
 
 h1 {
@@ -14,7 +15,7 @@ h1 {
 }
 
 h2 {
-    font-size: .9rem;
+    font-size: 1.2rem;
     text-align: center;
     border-bottom: 1px solid #bbb;
 }
@@ -31,11 +32,17 @@ header, footer, footer a {
     color: whitesmoke;
 }
 
-img {
-    width: 184;
+#profile {
+    width: 250px;
     height: auto;
     float: right;
-    
+    margin: .5rem;
+    border: 10px solid white;
+    box-shadow: 2px 2px 2px grey;
+}
+
+body {
+    background-color: #ffffe6;
 }
 
 footer {
