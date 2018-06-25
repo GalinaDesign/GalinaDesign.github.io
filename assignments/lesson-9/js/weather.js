@@ -1,5 +1,5 @@
 var weatherObject = new XMLHttpRequest();
-weatherObject.open("GET", "http://api.openweathermap.org/data/2.5/weather?id=4156210&APPID=baa961464eb122116277470a1effcbd3&units=metric", true);
+weatherObject.open("GET", "//api.openweathermap.org/data/2.5/weather?id=4156210&APPID=baa961464eb122116277470a1effcbd3&units=metric", true);
 
 weatherObject.send();
 
@@ -18,7 +18,7 @@ weatherObject.onload = function() {
     document.getElementById("wind").innerHTML = weatherInfo.wind.speed;
     
     var iconcode = weatherInfo.weather["0"].icon;
-    var icon_path = "https://openweathermap.org/img/w/" + iconcode + ".png";
+    var icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
 	document.getElementById("weather_icon").src = icon_path;
     
 }

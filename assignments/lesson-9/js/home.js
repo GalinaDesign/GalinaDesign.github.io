@@ -23,11 +23,12 @@ document.getElementById("mottoG").innerHTML = cityData.towns[1].motto;
 document.getElementById("yearG").innerHTML = cityData.towns[1].yearFounded;
 document.getElementById("populG").innerHTML = cityData.towns[1].currentPopulation;
 document.getElementById("rainfallG").innerHTML = cityData.towns[1].averageRainfall;
-
-/*------SPRINGFIELD----------*/
+   
+/*--------SPRINGFIELD--------*/
+    
 document.getElementById("mottoS").innerHTML = cityData.towns[3].motto;
 document.getElementById("yearS").innerHTML = cityData.towns[3].yearFounded;
 document.getElementById("populS").innerHTML = cityData.towns[3].currentPopulation;
 document.getElementById("rainfallS").innerHTML = cityData.towns[3].averageRainfall;
     
-    }
+  }
