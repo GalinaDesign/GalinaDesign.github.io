@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Thank you page of Bright Weather Site as assignment in CIT 230 at BYU-Idaho">
+        
+        <title>Thank you page | Bright Weather Site
+        </title>
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Mitr" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+
+        <header><a href="index.html">
+            <img id="logo" src="images/logo.jpg" alt="Logo of Bright Weather Site"></a>
+            <h1>Bright Weather Site</h1>
+            <div class="subheading"><h2>Timely forecast and fresh news always!</h2></div>
+        </header>
+
+            <nav class="clearfix">
+                    <button onclick="toggleMenu()">&#9776;</button>
+                    <ul id="primaryNav" class="hide">
+    	               <li><a href="index.html">Home</a></li>
+    	               <li><a href="franklin.html">Franklin</a></li>
+    	               <li><a href="greenville.html">Greenville</a></li>
+    	               <li><a href="springfield.html">Springfield</a></li>
+    	               <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+    	               <li><a href="gallery.html">Gallery</a></li>
+                    </ul>		
+            </nav>
+    
+        <main class="thanks">
+            
+            <h1>Thank you so much for the report! </h1>
+            <h3>The form was successfully recorded. We appreciate your time and affords to make our site more useful!</h3>
+            
+            <img id="thanks-card" src="images/thank-you.png" alt="thank you">
+            
+         </main>
+    
+         <footer>
+            
+             <section class="contact">
+                 
+                <div id="address">
+                <strong>Address:</strong><br>    
+                Bright Weather Center<br>
+                123 Main St.<br> 
+                Franklin, MI 87654</div><br>
+                
+                <div id="phone">    
+                <strong>Phone:</strong><br>
+                (801)555-1234</div><br>
+                    
+                <div id="email">
+                <strong>Email:</strong><br>
+                contact@weather.com</div><br>
+                 
+             </section><br>
+                
+             <section class="footer-bar">&copy;2018 | Galina T. | Bright Weather Site | <span id="currentdate">Current Date Placeholder</span>
+             </section>
+             
+        </footer>
+            <script src="js/currentdate.js"></script>
+            <script src="js/hamburger.js"></script>
+            <script src="js/windchill.js"></script>
+    </body>
+</html>
