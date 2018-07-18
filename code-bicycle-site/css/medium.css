@@ -1,0 +1,37 @@
+@media only screen and (min-width: 37.5em) {
+    
+    header {
+        min-height: 115px; 
+    }
+    
+ .pic-1, .pic-2 {
+    width: 40%;
+    margin: 0.5rem;
+}  
+
+    .pic-bike {
+        width: 350px;
+    }
+    
+    .thanks-main {
+        text-align: center;
+    }
+    
+    #thanks {
+        width: 30%;
+        margin: 2rem auto;
+    }
+    
+ .filler {
+     display: grid;
+     grid-template-columns: 1fr 2fr;
+        
+    }
+    
+  .footer-info  {
+       display: flex;
+       justify-content: space-around;
+       padding: .5rem; 
+    }
+    
+}

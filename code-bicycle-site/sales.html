@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Sales page of The Mountain Spoke Site as an assignment CIT-230 BYU-Idaho">
+        
+        <title>Sales page - The Mountain Spoke Site</title>
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="//fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<!--    <script src="js/jquery-2.2.1.min.js"></script> -->
+       <script src="//code.jquery.com/jquery-2.2.1.min.js"></script> 
+        
+<!--        <script>
+            $(function(){
+              if $("#panel-1").show(function(){
+                   $("#panel-2", "#panel-3").hide();
+               }) else if $("#panel-2").show(function(){
+                    $("#panel-1", "#panel-3").hide();
+                }) else $("#panel-3").show(function(){
+                    $("#panel-1", "#panel-2").hide();
+            })
+        </script> -->
+        
+      
+        <script>    
+            $(function(){
+            $("#btn-1").click(function(){
+                $("#btn-2", "#btn-3").prop("disabled", true);
+            });
+             $("#btn-2").click(function(){
+                $("#btn-1", "#btn-3").prop("disabled", true);
+            });
+             $("#btn-3").click(function(){
+                $("#btn-1", "#btn-2").prop("disabled", true);
+            });
+                
+            }) 
+        </script>
+                
+        
+    </head>
+    
+    <body>
+        <header>
+            <img id="logo" src="images/bike-1.jpg" alt="Logo of The Mountain Spoke">
+            <h1>The Mountain Spoke</h1>
+            <div class="subheading"><h2>Buy, treavel and repair your bike with our site!</h2></div>
+        </header>
+        
+        <nav class="clearfix">
+           <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="navMenu" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Adventure tours</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li class="active"><a href="sales.html">Sales</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        
+        </nav>
+        
+        <main>
+            <h1>Sales!</h1>
+            <img id="pic-sale" src="images/sale.png" alt="sales">
+            <h2>Look at our pleasant discounts:</h2>
+            
+            <button id="btn-1" class="accordion">Model 1</button>
+            <div id="panel-1">
+                <h3>Mountain bicycle</h3>
+                
+                <img class="pic-bike" src="images/mount-bike.jpg" alt="mountain bike">
+                
+                <h2 class="discount">5% discount!!!</h2>
+                
+                <p>Kent Terra 21-Speed All-Terrain Mountain Bike With Front Suspension. Begin your adventures after the pavement ends - with this beautiful new Kent Terra 21 speed suspension bike. Its performance styling and Vitesse suspension help to give you a comfortable ride you'll love on longer treks. The Terra has plenty of quality features, like the Shimano drive train with twist shifting, smooth linear pull brakes, alloy wheels and an easy adjust seat post. Explore trails less traveled or jet down urban streets. It's your choice, your bike and your adventure.</p>
+                
+                <a href="//www.target.com/p/kent-terra-2-6-26-men-s-mountain-bike-21-speed-blue/-/A-49164631#">More info...</a>
+            
+            </div>
+            
+            <button id="btn-2" class="accordion">Model 2</button>
+            <div id="panel-2">
+                <h3>Touring bicycle</h3>
+                
+                <img class="pic-bike" src="images/tour-bike.jpg" alt="touring bike">
+                
+                <h2 class="discount">10% discount!!!</h2>
+                
+                <p>The Tour – the cheapest of Ridgeback‘s “World” series – has much in common with its more expensive siblings, but with a cost-saving aluminium frame and basic Shimano gearing. Ridgeback bikes are widely available from high-street dealers, including Evans Cycles, making it a bike you’ll easily be able to test ride. They’ve bumped up the price over the last couple of years, putting it at the top end of the budget category.</p>
+                
+                <a href="//tomsbiketrip.com/which-touring-bike-should-i-buy/">More info...</a>
+            </div>
+            
+            <button id="btn-3" class="accordion">Model 3</button>
+            <div id="panel-3">
+                <h3>Electric bicycle</h3>
+                
+                <img class="leftCol" src="images/electric-bike.jpg" alt="electric bike" style="width: 350px;">
+                
+                <h2 class="discount">3% discount!!!</h2>
+                
+                <p>Smart mountain E-bikes XEB92 Specifications
+                Frame: aluminium alloy. Motor: 36v250w BAFANG mid-motor. Battery: 36v11.6ah li-iron battery. Controller: LCD control panel. Front fork: RST adjustable and hydraulic shock absorber. Rear Derailleur: 8-speed. Brake system: TEKTRO front and rear disc brake. Seat: Italy SR seat. Wheel: 27.5-1.95 KENDA mountain bike tire.</p>
+                
+                <a href="//www.z8ebike.com/PRODUCTS/Li-ion-bike/product-detail_23.html#top">More info...</a>
+            </div><br> 
+            
+        </main>
+        
+        <footer class="clearfix">
+            <div class="footer-info">
+                <div id="address"><strong>Address:</strong><br>3950 Valley<br> Commons Drive<br> Bozeman, MT</div><br>
+                
+                <div id="email"><strong>E-mail:</strong><br>info@url.com</div><br>
+                
+                <div id="footer-link">
+                    <figure>
+                        <figcaption>Video about the site</figcaption>
+                        <a href="overview.html"><img src="images/video-file.jpg" alt="videotape"></a>
+                    </figure>
+                </div><br>
+            </div>
+             
+            <section class="footer-bar">&copy;2018 &sim; Galina T. &sim; Ukraine &sim; The Mountain Spoke</section><br>
+        </footer>
+            <script src="js/hamburger-button.js"></script>
+            <script src="js/buttons.js"></script>
+    </body>
+
+</html>

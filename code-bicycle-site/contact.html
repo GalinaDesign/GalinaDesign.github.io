@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Contact page of The Mountain Spoke Site as an assignment CIT-230 BYU-Idaho">
+        
+        <title>Contact page - The Mountain Spoke Site</title>
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="//fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    
+    </head>
+    
+    <body>
+        <header>
+            <img id="logo" src="images/bike-1.jpg" alt="Logo of The Mountain Spoke">
+            <h1>The Mountain Spoke</h1>
+            <div class="subheading"><h2>Buy, treavel and repair your bike with our site!</h2></div>
+        </header>
+        
+        <nav class="clearfix">
+           <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="navMenu" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Adventure tours</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        
+        </nav>
+        
+        <main>
+                <h1>Contact us!</h1>
+            <div class="filler">
+                <div class="leftCol">
+                    <h2>Leave your information here:</h2>
+                    <form method="get" action="thanks.html">
+                        <fieldset>
+                            <legend>Personal information</legend>
+                            First Name*:<input type="text" name="fname" required autofocus>
+                            Last Name*:<input type="text" name="lname" required>
+                        
+                        </fieldset>
+                        
+                        <fieldset>
+                            <legend>Contact Information</legend>
+                            Email*:<input type="email" name="email" placeholder="username@gmail.com" required>
+                            Phone:<input type="tel" name="tel">
+                        
+                        </fieldset>
+                        
+                        <input class="contact-button" type="submit" value="Send my information">
+                    </form>
+                </div>
+                
+                <div class="rightCol">
+                <h2>Our location:</h2>
+                <iframe src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9316277611038!2d-111.09290618451072!3d45.67227287910394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718%2C+USA!5e0!3m2!1sen!2sua!4v1531416838894" width="600" height="450" frameborder="0"  allowfullscreen></iframe>
+                </div>
+                
+            </div>
+
+        </main>
+        
+        <footer class="clearfix">
+            <div class="footer-info">
+                <div id="address"><strong>Address:</strong><br>3950 Valley<br> Commons Drive<br> Bozeman, MT</div><br>
+                
+                <div id="email"><strong>E-mail:</strong><br>info@url.com</div><br>
+                
+                <div id="footer-link">
+                    <figure>
+                        <figcaption>Video about the site</figcaption>
+                        <a href="overview.html"><img src="images/video-file.jpg" alt="videotape"></a>
+                    </figure>
+                </div><br>
+            </div>
+             
+            <section class="footer-bar">&copy;2018 &sim; Galina T. &sim; Ukraine &sim; The Mountain Spoke</section><br>
+        </footer>
+            <script src="js/hamburger-button.js"></script>
+    
+    </body>
+
+</html>
+        
+        

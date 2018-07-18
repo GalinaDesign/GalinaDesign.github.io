@@ -1,0 +1,25 @@
+datatable = {
+    "service" : [
+    {
+        "price": "$50",
+        "name": ["Safety check and inspection",
+                 "Brake and gear adjustment",
+                 "Lightly wipe down and lube chain"]
+    },
+        
+    {
+        "price": "$80",
+        "name": ["Wheels trued and tensioned", 
+                "Bearing adjusted", 
+                "Drivetrain removal and cleaning"]
+        },
+        
+        {
+            "price": "$200",
+            "name": ["Bike stripped to frame",
+                     "Bearings and cables replaced as needed",
+                     "Brake bleed"]
+        }
+      ]      
+};
+    

@@ -1,0 +1,277 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } 
+
+body {
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+header, nav, main, footer { 
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+main {
+    text-align: left;
+}
+
+header {
+   background-color: #7403d0;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+
+header img{
+    width: 100px;
+    float: left;
+    margin: 0.3rem;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    
+}
+
+.subheading {
+    text-align: center;
+    color: #ebadd6;
+}
+
+h1, h2, h3 {
+    font-family: 'Signika', sans-serif;
+}
+
+main h1 {
+   text-align: center; 
+}
+
+main h2 {
+    color: #7403d0;
+}
+
+header img {
+    float: left;
+    border: 2px solid black;
+}
+
+/*-----NAVIGATION------*/
+nav button {
+    font-size: 1.6rem;
+    margin: .2rem 2%;
+    background-color: transparent;
+    color: white;
+}
+
+nav {
+    background-color: #f42b7f;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li a {
+    display: block;   
+    padding: .8rem 2%;
+    color: white;
+    text-decoration: none;
+    border-top:1px solid white;
+}
+
+nav ul li.active a { background-color: #c60053; font-weight: bold;}
+
+li a:hover { background-color: #9635e6; }
+
+nav ul.hide { display: none; }
+
+/*----MAIN-------*/
+.leftCol, .rightCol {
+    border: 4px solid #4158e7;
+    margin: .2rem;
+    padding: .5rem;
+    border-radius: 2%;
+}
+
+.pic-1, .pic-2 {
+    width: 90%;
+    margin: 0.5rem;
+}
+
+.pic-1 {float: left;}
+
+.pic-2 {float: right;}
+
+.pic-bike {
+    float: left;
+    border: 4px solid #4158e7;
+    margin: .2rem;
+    padding: .5rem;
+    border-radius: 2%;
+    width: 90%;
+}
+
+#pic-sale {
+    float: right;
+    width: 100px;
+}
+
+ .map {
+        width: 90%;
+    }
+
+.discount {
+    float: right;
+    margin: 1rem;
+    padding: .5rem;
+    color: yellow;
+    text-shadow: 1px 1px 3px black;
+    background-color: red;
+    border-radius: 20px;
+    font-family: 'Quicksand', sans-serif;  
+}
+
+#thanks {
+    width: 90%;
+    margin: 2rem;
+}
+
+main p strong {
+    color: #4158e7;
+}
+
+/*-----BUTTON AT HOME PAGE------*/
+#action {
+    margin-left: .5rem;
+
+    background-color: #f42b7f;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 25px;
+    box-shadow: 7px 7px 5px #9a0041;
+    min-height: 45px;
+    font-size: 20px;
+}
+
+/*-----BUTTONS ACCORDION------*/
+.accordion {
+    background-color: #7403d0;
+    color: beige;
+    font-size: 24px;
+    text-align: left;
+    padding: 15px 15px;
+    width: 100%;
+    border-bottom: 5px beige;
+    box-shadow: 5px 5px 5px #4f048c;
+}
+
+.active, .accordion:hover {
+    background-color: #f42b7f;
+}
+
+/*.panel {
+    padding: inherit;
+    display: none;
+}*/
+
+#panel-1, #panel-2, #panel-3 {
+    padding: inherit;
+    display: none;
+}
+
+/*----FORM-------*/
+form fieldset {
+    border-radius: 10px;
+    margin: 0.5rem auto;
+    
+}
+
+form legend {
+    color: #0622d2;
+    font-size: 14px;
+    font-style: italic;
+}
+
+form input, textarea {
+    background-color: #e1cbf4;
+    display: block;
+}
+
+form .contact-button {
+    background-color: #f42b7f;
+    color: white;
+    border: 1px solid grey;
+    box-shadow: 7px 7px 5px #9a0041;
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 0.4rem 1.5rem;
+    margin: 0.5rem;
+}
+
+/*----TABLEs-------*/
+table {
+    background-color: #e1cbf4;
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid #4158e7;
+    padding: 10px 15px;
+}
+
+
+/*-----FOOTER------*/
+
+footer {
+    color: beige;
+    font-size: .85rem;
+    text-align: center;
+}
+
+.footer-info {
+    background-color: #4158e7;
+    color: beige;
+}
+
+footer img {
+    width: 150px;
+    border: 1px solid beige;
+    
+}
+
+.links {
+    color: beige;
+    background-color: #4158e7;
+    padding: 10px;    
+}
+
+.links a.hover {
+    background-color: #f42b7f;
+    color: beige;
+    font-size: 18px;
+}
+
+.footer-bar {
+    padding: 0.5rem;
+    background-color: #9635e6;
+    border-top: 1px solid beige;
+    color: beige;
+    text-align: center;
+}
+    
+.clearfix:after {
+    content: ""; 
+    display: table;
+    clear: both;
+}
+
+
+
+

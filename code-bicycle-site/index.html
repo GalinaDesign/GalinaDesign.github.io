@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Home page of The Mountain Spoke Site as an assignment CIT-230 BYU-Idaho">
+        
+        <title>Home page - The Mountain Spoke Site</title>
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="//fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        
+        <script>
+        function buttonHome() {
+            document.write("<h1>Please, leave your contact info on the 'Contact Page'. Thank you!</h1>");
+}
+        </script>
+    
+    </head>
+    
+    <body>
+        <header>
+            <img id="logo" src="images/bike-1.jpg" alt="Logo of The Mountain Spoke">
+            <h1>The Mountain Spoke</h1>
+            <div class="subheading"><h2>Buy, treavel and repair your bike with our site!</h2></div>
+        </header>
+        
+        <nav class="clearfix">
+           <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="navMenu" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Adventure tours</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        
+        </nav>
+        
+        <main>
+            
+            <h1>Home of The Mountain Spoke</h1>
+            <div class="filler">
+            <aside class="leftCol">
+                <h2>About Us</h2>
+                <p><strong>The Mountain Spoke</strong> is a retail store and shop located in Bozeman, Montana. We  specialize in bicycles, bicycle repair, and tours. The owner-operated company caters to bicycle enthusiasts in the region. Company also sponsors and organizes tours to serious bicyclists from around the world. Our goal is to provide a website experience for our clients and potential clients that reflects their culture of bicycle enthusiasm with products, repair service, parts, and tour trips. </p>
+                
+                <button onclick="buttonHome()" id="action">Subscribe to our newsletter!</button>
+            
+            </aside>
+            
+            <article class="rightCol">
+                <h2>Intro and why it's great to have bicycle!</h2>
+                <img class="pic-1" src="images/mtb.jpg" alt="bike on the mountain road">
+                <p>Cycling, also called bicycling or biking, is the use of bicycles for transport, recreation, exercise or sport. People engaged in cycling are referred to as "cyclists", "bikers", or less commonly, as "bicyclists". Apart from two-wheeled bicycles, "cycling" also includes the riding of unicycles, tricycles, quadracycles, recumbent and similar human-powered vehicles (HPVs).</p>
+                
+                <p>Bicycles were introduced in the 19th century and now number approximately one billion worldwide. They are the principal means of transportation in many parts of the world. Cycling is widely regarded as a very effective and efficient mode of transportation optimal for short to moderate distances.</p>
+                
+                <img class="pic-2" src="images/bike-stand.jpg" alt="biker stands">
+                
+                <p>Bicycles provide <strong style="color:#7403d0;">numerous benefits</strong> in comparison with motor vehicles, including the sustained physical exercise involved in cycling, easier parking, increased maneuverability, and access to roads, bike paths and rural trails. Cycling also offers a reduced consumption of fossil fuels, less air or noise pollution, and much reduced traffic congestion. These lead to less financial cost to the user as well as to society at large (negligible damage to roads, less road area required). By fitting bicycle racks on the front of buses, transit agencies can significantly increase the areas they can serve.</p>
+                <p>More info on <a href="//en.wikipedia.org/wiki/Cycling"> Wikipedia</a></p>
+            </article>
+            </div>
+        
+        </main>
+        
+        <footer class="clearfix">
+            <div class="footer-info">
+                <div id="address"><strong>Address:</strong><br>3950 Valley<br> Commons Drive<br> Bozeman, MT</div><br>
+                
+                <div id="email"><strong>E-mail:</strong><br>info@url.com</div><br>
+                
+                <div id="footer-link">
+                    <figure>
+                        <figcaption>Video about the site</figcaption>
+                        <a href="overview.html"><img src="images/video-file.jpg" alt="videotape"></a>
+                    </figure>
+                </div><br>
+            </div>
+            
+            <div class="links"><a href="resource.html">Resource page</a></div>
+             
+            <section class="footer-bar">&copy;2018 &sim; Galina T. &sim; Ukraine &sim; The Mountain Spoke</section><br>
+        </footer>
+            <script src="js/hamburger-button.js"></script>
+    
+    </body>
+
+</html>
