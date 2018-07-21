@@ -32,7 +32,7 @@ header img{
 header h1 {
     color: white;
     text-align: center;
-    
+    padding: 2rem 1rem 0.5rem 1rem;
 }
 
 .subheading {
@@ -148,14 +148,17 @@ main p strong {
 /*-----BUTTON AT HOME PAGE------*/
 #action {
     margin-left: .5rem;
-
+    padding: .5rem;
     background-color: #f42b7f;
     color: white;
     border: 1px solid grey;
     border-radius: 25px;
     box-shadow: 7px 7px 5px #9a0041;
     min-height: 45px;
+    max-width: 300px;
     font-size: 20px;
+    text-align: center;
+    text-decoration: none;
 }
 
 /*-----BUTTONS ACCORDION------*/
